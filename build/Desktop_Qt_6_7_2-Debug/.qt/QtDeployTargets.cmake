@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_FileExplorer_FILE /home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer)
+set(__QT_DEPLOY_TARGET_FileExplorer_TYPE EXECUTABLE)

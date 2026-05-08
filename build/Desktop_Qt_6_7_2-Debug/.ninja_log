@@ -1,0 +1,9 @@
+# ninja log v5
+13	104	1778246591320868880	FileExplorer_autogen/timestamp	3367006b7ee0859c
+13	104	1778246591320868880	FileExplorer_autogen/mocs_compilation.cpp	3367006b7ee0859c
+13	104	1778246591320868880	/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/timestamp	3367006b7ee0859c
+2865	3425	1778246594636930209	FileExplorer	24c0dfd4f47d99d0
+13	104	1778246591320868880	/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/mocs_compilation.cpp	3367006b7ee0859c
+612	3416	1778236979839686339	CMakeFiles/FileExplorer.dir/FileExplorer_autogen/mocs_compilation.cpp.o	3830fbdfbb7a91fe
+613	3545	1778236979967728868	CMakeFiles/FileExplorer.dir/main.cpp.o	558cdf0cb8494433
+107	2865	1778246594080919929	CMakeFiles/FileExplorer.dir/mainwindow.cpp.o	ccce17ce7184afe4

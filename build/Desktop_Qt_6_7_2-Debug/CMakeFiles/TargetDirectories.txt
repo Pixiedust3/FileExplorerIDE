@@ -1,0 +1,9 @@
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/FileExplorer.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/edit_cache.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/list_install_components.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/local.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/install/strip.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/FileExplorer_autogen_timestamp_deps.dir
+/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/FileExplorer_autogen.dir

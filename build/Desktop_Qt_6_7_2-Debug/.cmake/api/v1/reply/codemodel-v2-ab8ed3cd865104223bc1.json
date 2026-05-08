@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-78be0dc27bf18bb49fe4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FileExplorer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FileExplorer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FileExplorer-Debug-aca72e80dfab24f2a902.json",
+					"name" : "FileExplorer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FileExplorer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FileExplorer_autogen-Debug-c4b737d432586d02efc5.json",
+					"name" : "FileExplorer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FileExplorer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FileExplorer_autogen_timestamp_deps-Debug-bd733443c27798cdd21b.json",
+					"name" : "FileExplorer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug",
+		"source" : "/home/sirus/Desktop/FileExplorer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
