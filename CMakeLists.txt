@@ -23,9 +23,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(FileExplorer
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        Layout.qml
+
         FileExplorer.h
         FileExplorer.cpp
+        Theme.h
 
     )
 # Define target properties for Android with Qt 6 as:

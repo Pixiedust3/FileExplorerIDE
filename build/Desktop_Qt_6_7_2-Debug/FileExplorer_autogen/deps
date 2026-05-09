@@ -2,6 +2,7 @@ FileExplorer_autogen/timestamp: \
 	/home/sirus/Desktop/FileExplorer/CMakeLists.txt \
 	/home/sirus/Desktop/FileExplorer/FileExplorer.cpp \
 	/home/sirus/Desktop/FileExplorer/FileExplorer.h \
+	/home/sirus/Desktop/FileExplorer/Theme.h \
 	/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/3.25.1/CMakeCXXCompiler.cmake \
 	/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/3.25.1/CMakeSystem.cmake \
