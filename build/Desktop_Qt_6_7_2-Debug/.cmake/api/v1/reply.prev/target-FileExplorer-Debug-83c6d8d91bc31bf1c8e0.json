@@ -288,7 +288,7 @@
 				0,
 				1,
 				2,
-				7
+				6
 			]
 		}
 	],
@@ -377,7 +377,7 @@
 				0,
 				1,
 				2,
-				7
+				6
 			]
 		},
 		{
@@ -385,8 +385,8 @@
 			"sourceIndexes" : 
 			[
 				3,
-				6,
-				8
+				5,
+				7
 			]
 		},
 		{
@@ -394,15 +394,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				5,
-				9
+				8
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				10
+				9
 			]
 		}
 	],
@@ -435,11 +434,6 @@
 		{
 			"backtrace" : 4,
 			"path" : "mainwindow.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "Layout.qml",
 			"sourceGroupIndex" : 2
 		},
 		{
