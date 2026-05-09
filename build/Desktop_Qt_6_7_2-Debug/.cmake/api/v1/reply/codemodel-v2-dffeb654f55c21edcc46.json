@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-78be0dc27bf18bb49fe4.json",
+					"jsonFile" : "directory-.-Debug-334cf90f1f00a4b4a630.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FileExplorer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FileExplorer-Debug-60dd7377246dc3917532.json",
+					"jsonFile" : "target-FileExplorer-Debug-272a301166f65f16cd8a.json",
 					"name" : "FileExplorer",
 					"projectIndex" : 0
 				},

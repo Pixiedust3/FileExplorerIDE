@@ -438,6 +438,7 @@
 	"SETTINGS_FILE" : "/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/FileExplorer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/sirus/Desktop/FileExplorer/FileExplorer.cpp", "MU", null ],
 		[ "/home/sirus/Desktop/FileExplorer/main.cpp", "MU", null ],
 		[ "/home/sirus/Desktop/FileExplorer/mainwindow.cpp", "MU", null ]
 	],

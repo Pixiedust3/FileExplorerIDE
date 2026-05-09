@@ -71,13 +71,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 64,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 47,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -287,7 +287,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				7
 			]
 		}
 	],
@@ -375,7 +376,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				7
 			]
 		},
 		{
@@ -384,7 +386,7 @@
 			[
 				3,
 				6,
-				7
+				8
 			]
 		},
 		{
@@ -393,14 +395,14 @@
 			[
 				4,
 				5,
-				8
+				9
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				9
+				10
 			]
 		}
 	],
@@ -444,6 +446,12 @@
 			"backtrace" : 4,
 			"path" : "FileExplorer.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "FileExplorer.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

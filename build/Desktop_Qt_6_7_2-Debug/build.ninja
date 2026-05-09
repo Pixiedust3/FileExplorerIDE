@@ -73,6 +73,14 @@ build CMakeFiles/FileExplorer.dir/mainwindow.cpp.o: CXX_COMPILER__FileExplorer_D
   OBJECT_DIR = CMakeFiles/FileExplorer.dir
   OBJECT_FILE_DIR = CMakeFiles/FileExplorer.dir
 
+build CMakeFiles/FileExplorer.dir/FileExplorer.cpp.o: CXX_COMPILER__FileExplorer_Debug /home/sirus/Desktop/FileExplorer/FileExplorer.cpp || cmake_object_order_depends_target_FileExplorer
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/FileExplorer.dir/FileExplorer.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always -fPIC -std=gnu++17
+  INCLUDES = -I/home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/include -isystem /home/sirus/Qt/6.7.2/gcc_64/include/QtCore -isystem /home/sirus/Qt/6.7.2/gcc_64/include -isystem /home/sirus/Qt/6.7.2/gcc_64/mkspecs/linux-g++ -isystem /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets -isystem /home/sirus/Qt/6.7.2/gcc_64/include/QtGui
+  OBJECT_DIR = CMakeFiles/FileExplorer.dir
+  OBJECT_FILE_DIR = CMakeFiles/FileExplorer.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target FileExplorer
@@ -81,7 +89,7 @@ build CMakeFiles/FileExplorer.dir/mainwindow.cpp.o: CXX_COMPILER__FileExplorer_D
 #############################################
 # Link the executable FileExplorer
 
-build FileExplorer: CXX_EXECUTABLE_LINKER__FileExplorer_Debug CMakeFiles/FileExplorer.dir/FileExplorer_autogen/mocs_compilation.cpp.o CMakeFiles/FileExplorer.dir/main.cpp.o CMakeFiles/FileExplorer.dir/mainwindow.cpp.o | /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || FileExplorer_autogen FileExplorer_autogen_timestamp_deps
+build FileExplorer: CXX_EXECUTABLE_LINKER__FileExplorer_Debug CMakeFiles/FileExplorer.dir/FileExplorer_autogen/mocs_compilation.cpp.o CMakeFiles/FileExplorer.dir/main.cpp.o CMakeFiles/FileExplorer.dir/mainwindow.cpp.o CMakeFiles/FileExplorer.dir/FileExplorer.cpp.o | /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || FileExplorer_autogen FileExplorer_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = -Wl,-rpath,/home/sirus/Qt/6.7.2/gcc_64/lib:  /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2  /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2  /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
   OBJECT_DIR = CMakeFiles/FileExplorer.dir
@@ -181,7 +189,7 @@ build FileExplorer_autogen/timestamp FileExplorer_autogen/mocs_compilation.cpp |
 #############################################
 # Phony custom command for CMakeFiles/FileExplorer_autogen_timestamp_deps
 
-build CMakeFiles/FileExplorer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/FileExplorer_autogen_timestamp_deps: phony /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/./libexec/uic /home/sirus/Qt/6.7.2/gcc_64/./libexec/moc /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2
+build CMakeFiles/FileExplorer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/FileExplorer_autogen_timestamp_deps: phony /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/sirus/Qt/6.7.2/gcc_64/./libexec/moc /home/sirus/Qt/6.7.2/gcc_64/./libexec/uic
 
 
 #############################################
