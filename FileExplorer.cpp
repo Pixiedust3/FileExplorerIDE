@@ -1,6 +1,7 @@
-#include <Theme.h>
+#include "Theme.h"
 #include "FileExplorer.h"
 #include <QDir>
+#include <QString>
 
 
 FileExplorer::FileExplorer(QObject *parent) : QObject(parent) {
@@ -16,7 +17,7 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
     view->setSortingEnabled(true);
     view->setColumnWidth(0, 250);
 
-    view->styleSheet(QString
+    view->setStyleSheet(QString
                      (
         "QTreeView{"
         "background-color: %1;"
@@ -32,5 +33,6 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
         Theme::text,
         Theme::selected,
         Theme::surface1
-)));
+));
+    }
 

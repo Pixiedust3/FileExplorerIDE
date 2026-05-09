@@ -11,6 +11,7 @@ FileExplorer_autogen/timestamp: \
 	/home/sirus/Desktop/FileExplorer/mainwindow.cpp \
 	/home/sirus/Desktop/FileExplorer/mainwindow.h \
 	/home/sirus/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+	/home/sirus/Qt/6.7.2/gcc_64/include/QtCore/QString \
 	/home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20functional.h \
 	/home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20memory.h \
 	/home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20type_traits.h \

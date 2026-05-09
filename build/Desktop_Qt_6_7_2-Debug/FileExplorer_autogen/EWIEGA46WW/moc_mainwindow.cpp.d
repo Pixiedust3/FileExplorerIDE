@@ -1,9 +1,13 @@
 /home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/sirus/Desktop/FileExplorer/mainwindow.h \
   /home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/moc_predefs.h \
+  /home/sirus/Desktop/FileExplorer/FileExplorer.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/QString \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20functional.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20memory.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20type_traits.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q23utility.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qalgorithms.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qanystringview.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qarraydata.h \
@@ -18,6 +22,7 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qbytearraylist.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qbytearrayview.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qcalendar.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qchar.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qcompare.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qcompare_impl.h \
@@ -31,9 +36,15 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qdatastream.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qdatetime.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qdir.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qdiriterator.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qendian.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qexceptionhandling.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qfile.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qfiledevice.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qfileinfo.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qflags.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qfloat16.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qforeach.h \
@@ -44,12 +55,15 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qglobalstatic.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qhash.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qiodevice.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qiodevicebase.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qitemselectionmodel.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qiterable.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qiterator.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qlatin1stringview.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qline.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qlist.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qlocale.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qlogging.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qmalloc.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qmap.h \
@@ -70,6 +84,7 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qprocessordetection.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qrect.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qrefcount.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qregularexpression.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qscopedpointer.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qscopeguard.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qset.h \
@@ -101,6 +116,7 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtdeprecationmarkers.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtenvironmentvariables.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtextstream.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtimezone.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtmetamacros.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtnoop.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qtpreprocessorsupport.h \
@@ -117,11 +133,13 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qversiontagging.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qxptype_traits.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/qyieldcpu.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/QFileSystemModel \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qaction.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qbitmap.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qbrush.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qcolor.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qcursor.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qfilesystemmodel.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qfont.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qfontinfo.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qfontmetrics.h \
@@ -140,11 +158,25 @@
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qtransform.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qvalidator.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtGui/qwindowdefs.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/QMainWindow \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/QTreeView \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractitemview.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qmainwindow.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qrubberband.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qslider.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qstyle.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qtabbar.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qtabwidget.h \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qtreeview.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -166,11 +198,14 @@
   /usr/include/c++/12/bits/allocator.h \
   /usr/include/c++/12/bits/atomic_base.h \
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/basic_ios.tcc \
   /usr/include/c++/12/bits/basic_string.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/chrono.h \
+  /usr/include/c++/12/bits/codecvt.h \
   /usr/include/c++/12/bits/concept_check.h \
   /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
@@ -180,6 +215,10 @@
   /usr/include/c++/12/bits/exception.h \
   /usr/include/c++/12/bits/exception_defines.h \
   /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/fs_dir.h \
+  /usr/include/c++/12/bits/fs_fwd.h \
+  /usr/include/c++/12/bits/fs_ops.h \
+  /usr/include/c++/12/bits/fs_path.h \
   /usr/include/c++/12/bits/functexcept.h \
   /usr/include/c++/12/bits/functional_hash.h \
   /usr/include/c++/12/bits/hash_bytes.h \
@@ -187,26 +226,35 @@
   /usr/include/c++/12/bits/hashtable_policy.h \
   /usr/include/c++/12/bits/invoke.h \
   /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/bits/list.tcc \
   /usr/include/c++/12/bits/locale_classes.h \
   /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/nested_exception.h \
   /usr/include/c++/12/bits/new_allocator.h \
   /usr/include/c++/12/bits/node_handle.h \
+  /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/bits/ostream_insert.h \
   /usr/include/c++/12/bits/parse_numbers.h \
   /usr/include/c++/12/bits/postypes.h \
   /usr/include/c++/12/bits/predefined_ops.h \
   /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/bits/quoted_string.h \
   /usr/include/c++/12/bits/range_access.h \
   /usr/include/c++/12/bits/refwrap.h \
   /usr/include/c++/12/bits/shared_ptr.h \
   /usr/include/c++/12/bits/shared_ptr_atomic.h \
   /usr/include/c++/12/bits/shared_ptr_base.h \
   /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/bits/sstream.tcc \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/bits/std_function.h \
   /usr/include/c++/12/bits/stl_algo.h \
@@ -246,6 +294,7 @@
   /usr/include/c++/12/climits \
   /usr/include/c++/12/clocale \
   /usr/include/c++/12/cmath \
+  /usr/include/c++/12/codecvt \
   /usr/include/c++/12/compare \
   /usr/include/c++/12/cstddef \
   /usr/include/c++/12/cstdint \
@@ -254,6 +303,7 @@
   /usr/include/c++/12/cstring \
   /usr/include/c++/12/ctime \
   /usr/include/c++/12/cwchar \
+  /usr/include/c++/12/cwctype \
   /usr/include/c++/12/debug/assertions.h \
   /usr/include/c++/12/debug/debug.h \
   /usr/include/c++/12/exception \
@@ -264,22 +314,29 @@
   /usr/include/c++/12/ext/numeric_traits.h \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/ext/type_traits.h \
+  /usr/include/c++/12/filesystem \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/initializer_list \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/ios \
   /usr/include/c++/12/iosfwd \
+  /usr/include/c++/12/istream \
   /usr/include/c++/12/iterator \
   /usr/include/c++/12/limits \
   /usr/include/c++/12/list \
+  /usr/include/c++/12/locale \
   /usr/include/c++/12/map \
   /usr/include/c++/12/memory \
   /usr/include/c++/12/new \
   /usr/include/c++/12/numeric \
   /usr/include/c++/12/optional \
+  /usr/include/c++/12/ostream \
   /usr/include/c++/12/pstl/execution_defs.h \
   /usr/include/c++/12/pstl/glue_algorithm_defs.h \
   /usr/include/c++/12/pstl/glue_memory_defs.h \
   /usr/include/c++/12/pstl/glue_numeric_defs.h \
   /usr/include/c++/12/ratio \
+  /usr/include/c++/12/sstream \
   /usr/include/c++/12/stdexcept \
   /usr/include/c++/12/streambuf \
   /usr/include/c++/12/string \
@@ -309,6 +366,7 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -323,6 +381,7 @@
   /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -386,6 +445,7 @@
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
@@ -393,10 +453,14 @@
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
