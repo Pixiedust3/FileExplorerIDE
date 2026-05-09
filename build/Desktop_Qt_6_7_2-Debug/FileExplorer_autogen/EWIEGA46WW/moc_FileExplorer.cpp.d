@@ -1,6 +1,7 @@
 /home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/EWIEGA46WW/moc_FileExplorer.cpp: /home/sirus/Desktop/FileExplorer/FileExplorer.h \
   /home/sirus/Desktop/FileExplorer/build/Desktop_Qt_6_7_2-Debug/FileExplorer_autogen/moc_predefs.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/QObject \
+  /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/QString \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20functional.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20memory.h \
   /home/sirus/Qt/6.7.2/gcc_64/include/QtCore/q20type_traits.h \

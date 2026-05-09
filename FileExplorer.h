@@ -2,6 +2,7 @@
 #define FILEEXPLORER_H
 
 #include<QObject>
+#include<QString>
 #include<QTreeView>
 #include<QFileSystemModel>
 
