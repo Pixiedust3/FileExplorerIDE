@@ -11,8 +11,12 @@ FileExplorer::FileExplorer(QObject *parent) : QObject(parent) {
 void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
     model_->setRootPath(path);
 
+    view->hideColumn(2);
+    view->hideColumn(3);
     view->setModel(model_);
     view->setRootIndex(model_->index(path));
+    view->setIconSize(QSize(16, 16));
+    view->setSortingEnabled(true);
 
     view->setSortingEnabled(true);
     view->setColumnWidth(0, 250);
@@ -23,6 +27,7 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
         "background-color: %1;"
         "color: %2;"
         "selection-background-color: %3;"
+        "  font-size: 14px;"
         "}"
         "QHeaderView::section{"
         "background-color: %4;"
