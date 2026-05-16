@@ -16,7 +16,7 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
     view->setModel(model_);
     view->setRootIndex(model_->index(path));
     view->setIconSize(QSize(16, 16));
-    view->setSortingEnabled(True);
+    view->setSortingEnabled(true);
 
     view->setSortingEnabled(true);
     view->setColumnWidth(0, 250);
@@ -27,6 +27,7 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
         "background-color: %1;"
         "color: %2;"
         "selection-background-color: %3;"
+        "  font-size: 14px;"
         "}"
         "QHeaderView::section{"
         "background-color: %4;"
