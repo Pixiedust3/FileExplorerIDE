@@ -21,5 +21,10 @@ public:
 private:
     Ui::MainWindow *ui;
     FileExplorer explorer;
+
+private slots:
+    void onOpenFolderTriggered();
+
+
 };
 #endif // MAINWINDOW_H
