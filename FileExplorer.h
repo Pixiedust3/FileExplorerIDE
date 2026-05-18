@@ -17,4 +17,4 @@ private:
 };
 
 
-#endif // FILEEXPLORER_
+#endif // FILEEXPLORER_H
