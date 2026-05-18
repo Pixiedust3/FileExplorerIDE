@@ -2,6 +2,7 @@
 #include "FileExplorer.h"
 #include <QDir>
 #include <QString>
+#include <QSize>
 
 
 FileExplorer::FileExplorer(QObject *parent) : QObject(parent) {
