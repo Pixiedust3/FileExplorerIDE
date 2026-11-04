@@ -19,6 +19,9 @@ public:
     ~MainWindow();
 
 private:
+    void buildLayout();
+    void buildMenus();
+
     FileExplorer explorer;
 
     QDockWidget    *filesDock    = nullptr;
