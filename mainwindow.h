@@ -4,11 +4,11 @@
 #include <QMainWindow>
 #include "FileExplorer.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
+class QDockWidget;
+class QPlainTextEdit;
+class QSplitter;
+class QTabWidget;
+class QTreeView;
 
 class MainWindow : public QMainWindow
 {
@@ -19,8 +19,16 @@ public:
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
+    void buildLayout();
+    void buildMenus();
+
     FileExplorer explorer;
+
+    QDockWidget    *filesDock    = nullptr;
+    QTreeView      *treeView     = nullptr;
+    QTabWidget     *tabWidget    = nullptr;
+    QPlainTextEdit *terminalPane = nullptr;
+    QSplitter      *splitter     = nullptr;
 
 private slots:
     void onOpenFolderTriggered();
