@@ -40,7 +40,6 @@ bool EditorTab::load(const QString &path)
     const QByteArray data = file.readAll();
     file.close();
 
-    // Guard: refuse obvious binaries (NUL byte in the first 4 KB)
     if (data.left(4096).contains('\0')) {
         emit statusMessage(tr("%1 is a binary file, not opening").arg(path), 4000);
         return false;
@@ -69,5 +68,24 @@ bool EditorTab::writeToDisk(const QString &path)
     file.close();
     document()->setModified(false);
     emit statusMessage(tr("Saved %1").arg(path), 3000);
+    return true;
+}
+bool EditorTab::save()
+{
+    return path_.isEmpty() ? saveAs() : writeToDisk(path_);
+}
+
+bool EditorTab::saveAs()
+{
+    const QString path = QFileDialog::getSaveFileName(
+        this, tr("Save As"),
+        path_.isEmpty() ? QDir::homePath() : path_);
+    if (path.isEmpty())
+        return false;
+    if (!writeToDisk(path))
+        return false;
+
+    path_ = path;
+    emit titleChanged(this);
     return true;
 }
