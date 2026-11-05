@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         FileExplorer.cpp
         Theme.h
         EditorTab.h
+        Editortab.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
