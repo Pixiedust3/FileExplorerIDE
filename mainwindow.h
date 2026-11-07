@@ -9,6 +9,7 @@ class QPlainTextEdit;
 class QSplitter;
 class QTabWidget;
 class QTreeView;
+class  EditorTab;
 
 class MainWindow : public QMainWindow
 {
@@ -22,6 +23,10 @@ private:
     void buildLayout();
     void buildMenus();
 
+    EditorTab *currentTab() const;
+    void openFile(const QString &path);
+    void refreshTabTitle(EditorTab *tab);
+    void updateWindowTitle();
     FileExplorer explorer;
 
     QDockWidget    *filesDock    = nullptr;
@@ -32,6 +37,12 @@ private:
 
 private slots:
     void onOpenFolderTriggered();
+    void onNewFileTriggered();
+    void onOpenFileTriggered();
+    void onSaveTriggered();
+    void onSaveAsTriggered();
+    void onCloseTabRequested(int index);
+    void onCurrentTabChanged(int index);
 
 
 };
