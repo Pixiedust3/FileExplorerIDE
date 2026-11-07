@@ -1,11 +1,12 @@
 #include "mainwindow.h"
-
+#include "EditorTab.h"
 #include <QAction>
 #include <QDir>
 #include <QDockWidget>
 #include <QFileDialog>
 #include <QKeySequence>
 #include <QMenuBar>
+#include <QMessageBox>
 #include <QPlainTextEdit>
 #include <QSplitter>
 #include <QStatusBar>
@@ -43,6 +44,8 @@ void MainWindow::buildLayout()
     tabWidget->setObjectName("tabWidget");
     tabWidget->setTabsClosable(true);
     tabWidget->setMovable(true);
+    connect(tabWidget, &QTabWidget::tabCloseRequested, this, &MainWindow::onCloseTabRequested);
+    connect(tabWidget, &QTabWidget::currentChanged,    this, &MainWindow::onCurrentTabChanged);
 
     terminalPane = new QPlainTextEdit(this);
     terminalPane->setObjectName("terminalPane");
@@ -72,17 +75,17 @@ void MainWindow::buildMenus()
 
     QAction *openFile = fileMenu->addAction(tr("&Open File"));
     openFile->setShortcut(QKeySequence(tr("Ctrl+O")));
-    // TODO Phase 2: wire up
+
 
     fileMenu->addSeparator();
 
     QAction *save = fileMenu->addAction(tr("&Save"));
     save->setShortcut(QKeySequence::Save);          // Ctrl+S
-    // TODO Phase 2: wire up
+
 
     QAction *saveAs = fileMenu->addAction(tr("Save &As"));
     saveAs->setShortcut(QKeySequence(tr("Ctrl+Shift+S")));
-    // TODO Phase 2: wire up
+
 
     fileMenu->addSeparator();
 
