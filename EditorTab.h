@@ -1,7 +1,7 @@
 #ifndef EDITORTAB_H
 #define EDITORTAB_H
 
-#inlude<QPlainTextEdit>
+#include<QPlainTextEdit>
 
 class EditorTab : public QPlainTextEdit
 {
