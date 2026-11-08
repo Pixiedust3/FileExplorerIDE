@@ -1,12 +1,14 @@
 #include "EditorTab.h"
 #include "Theme.h"
 
+#include <QDir>
 #include <QFile>
 #include <QFileDialog>
+#include <QFileInfo>
 #include <QFontDatabase>
 #include <QMessageBox>
 
-EditroTab::EditorTab(QWidget *parent)
+EditorTab::EditorTab(QWidget *parent)
     :QPlainTextEdit(parent)
 {
     QFont font =QFontDatabase::systemFont(QFontDatabase::FixedFont);
