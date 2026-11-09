@@ -11,7 +11,9 @@ class FileExplorer : public QObject{
 public:
     explicit FileExplorer(QObject *root = nullptr);
     void setupDirectoryView(QTreeView *view , const QString& path);
+    void clearView(QTreeView *view);
 private:
+    void applyStyle(QTreeView *view);
     QFileSystemModel* model_;
 
 };
