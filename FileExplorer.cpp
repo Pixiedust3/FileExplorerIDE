@@ -12,9 +12,10 @@ FileExplorer::FileExplorer(QObject *parent) : QObject(parent) {
 void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
     model_->setRootPath(path);
 
+    view->setModel(model_);
+    view->hideColumn(1);
     view->hideColumn(2);
     view->hideColumn(3);
-    view->setModel(model_);
     view->setRootIndex(model_->index(path));
     view->setIconSize(QSize(16, 16));
     view->setSortingEnabled(true);
