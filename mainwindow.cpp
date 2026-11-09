@@ -4,6 +4,7 @@
 #include <QDir>
 #include <QDockWidget>
 #include <QFileDialog>
+#include <QFileSystemModel>
 #include <QKeySequence>
 #include <QMenuBar>
 #include <QMessageBox>
@@ -46,6 +47,7 @@ void MainWindow::buildLayout()
     tabWidget->setMovable(true);
     connect(tabWidget, &QTabWidget::tabCloseRequested, this, &MainWindow::onCloseTabRequested);
     connect(tabWidget, &QTabWidget::currentChanged,    this, &MainWindow::onCurrentTabChanged);
+    connect(treeView, &QTreeView::doubleClicked,       this, &MainWindow::onFileDoubleClicked);
 
     terminalPane = new QPlainTextEdit(this);
     terminalPane->setObjectName("terminalPane");
@@ -232,4 +234,13 @@ void MainWindow::onCloseTabRequested(int index)
 
     tabWidget->removeTab(index);
     tab->deleteLater();
+}
+
+void MainWindow::onFileDoubleClicked(const QModelIndex &index)
+{
+    auto *model = qobject_cast<QFileSystemModel *>(treeView->model());
+    if (!model || !index.isValid() || model->isDir(index))
+        return;
+
+    openFile(model->filePath(index));
 }

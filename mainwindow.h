@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QModelIndex>
 #include "FileExplorer.h"
 
 class QDockWidget;
@@ -43,6 +44,7 @@ private slots:
     void onSaveAsTriggered();
     void onCloseTabRequested(int index);
     void onCurrentTabChanged(int index);
+    void onFileDoubleClicked(const QModelIndex &index);
 
 
 };
