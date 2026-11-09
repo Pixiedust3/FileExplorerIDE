@@ -1,18 +1,24 @@
 #include "mainwindow.h"
 #include "EditorTab.h"
+#include "Theme.h"
 #include <QAction>
 #include <QDir>
 #include <QDockWidget>
 #include <QFileDialog>
 #include <QFileSystemModel>
 #include <QKeySequence>
+#include <QLabel>
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QPlainTextEdit>
 #include <QSplitter>
+#include <QStackedWidget>
 #include <QStatusBar>
+#include <QStyle>
 #include <QTabWidget>
+#include <QToolBar>
 #include <QTreeView>
+#include <QVBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -21,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     buildLayout();
     buildMenus();
 
-    explorer.setupDirectoryView(treeView, QDir::homePath());
+    explorer.clearView(treeView);
 
     setWindowTitle("FileExplorer IDE");
     resize(1249, 757);
@@ -34,8 +40,38 @@ void MainWindow::buildLayout()
     // --- Left: file tree in a dock ---
     filesDock = new QDockWidget(tr("Files"), this);
     filesDock->setObjectName("filesDock");
-    treeView = new QTreeView(filesDock);
-    filesDock->setWidget(treeView);
+
+    treeStack = new QStackedWidget(filesDock);
+
+    QWidget *hintPage = new QWidget(treeStack);
+    QVBoxLayout *hintLayout = new QVBoxLayout(hintPage);
+    hintLayout->addStretch();
+
+    QLabel *hintTitle = new QLabel(tr("No folder open"), hintPage);
+    hintTitle->setObjectName("hintTitle");
+    hintTitle->setAlignment(Qt::AlignCenter);
+
+    QLabel *hintSub = new QLabel(tr("File  →  Open Folder\nCtrl+Shift+O"), hintPage);
+    hintSub->setObjectName("hintSub");
+    hintSub->setAlignment(Qt::AlignCenter);
+
+    hintLayout->addWidget(hintTitle);
+    hintLayout->addWidget(hintSub);
+    hintLayout->addStretch();
+
+    hintPage->setStyleSheet(QStringLiteral(
+        "QWidget { background-color: %1; }"
+        "QLabel#hintTitle { color: %2; font-size: 15px; font-weight: bold; background: transparent; }"
+        "QLabel#hintSub { color: %3; font-size: 12px; background: transparent; }")
+        .arg(Theme::background, Theme::text, Theme::color1));
+
+    treeView = new QTreeView(treeStack);
+
+    treeStack->addWidget(hintPage);
+    treeStack->addWidget(treeView);
+    treeStack->setCurrentIndex(0);
+
+    filesDock->setWidget(treeStack);
     addDockWidget(Qt::LeftDockWidgetArea, filesDock);
     filesDock->setMinimumWidth(180);
     filesDock->setMaximumWidth(420);
@@ -63,7 +99,21 @@ void MainWindow::buildLayout()
     splitter->setSizes({540, 190});
 
     setCentralWidget(splitter);
-    statusBar()->showMessage(tr("Ready"));
+
+    openFolderAction = new QAction(style()->standardIcon(QStyle::SP_DirOpenIcon),
+                                   tr("Open &Folder"), this);
+    openFolderAction->setShortcut(QKeySequence(tr("Ctrl+Shift+O")));
+    connect(openFolderAction, &QAction::triggered,
+            this, &MainWindow::onOpenFolderTriggered);
+
+    QToolBar *toolbar = addToolBar(tr("Main"));
+    toolbar->setObjectName("mainToolbar");
+    toolbar->setMovable(false);
+    toolbar->setFloatable(false);
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    toolbar->addAction(openFolderAction);
+
+    statusBar()->showMessage(tr("No folder open — File → Open Folder (Ctrl+Shift+O)"));
 }
 
 void MainWindow::buildMenus()
@@ -79,10 +129,7 @@ void MainWindow::buildMenus()
     connect(openFile, &QAction::triggered, this, &MainWindow::onOpenFileTriggered);
 
 
-    QAction *openFolder = fileMenu->addAction(tr("Open &Folder"));
-    openFolder->setShortcut(QKeySequence(tr("Ctrl+Shift+O")));
-    connect(openFolder, &QAction::triggered,
-            this, &MainWindow::onOpenFolderTriggered);
+    fileMenu->addAction(openFolderAction);
 
 
     fileMenu->addSeparator();
@@ -114,6 +161,7 @@ void MainWindow::onOpenFolderTriggered()
         return;
 
     explorer.setupDirectoryView(treeView, directory);
+    treeStack->setCurrentIndex(1);
     statusBar()->showMessage(tr("Opened %1").arg(directory), 3000);
 }
 

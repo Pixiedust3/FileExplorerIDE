@@ -8,6 +8,7 @@
 class QDockWidget;
 class QPlainTextEdit;
 class QSplitter;
+class QStackedWidget;
 class QTabWidget;
 class QTreeView;
 class  EditorTab;
@@ -30,8 +31,10 @@ private:
     void updateWindowTitle();
     FileExplorer explorer;
 
+    QAction *openFolderAction = nullptr;
     QDockWidget    *filesDock    = nullptr;
     QTreeView      *treeView     = nullptr;
+    QStackedWidget *treeStack    = nullptr;
     QTabWidget     *tabWidget    = nullptr;
     QPlainTextEdit *terminalPane = nullptr;
     QSplitter      *splitter     = nullptr;

@@ -9,6 +9,12 @@ FileExplorer::FileExplorer(QObject *parent) : QObject(parent) {
     model_ = new QFileSystemModel(this);
 }
 
+void FileExplorer::clearView(QTreeView *view) {
+    view->setModel(nullptr);
+    view->setRootIndex(QModelIndex());
+    applyStyle(view);
+}
+
 void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
     model_->setRootPath(path);
 
@@ -19,10 +25,12 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
     view->setRootIndex(model_->index(path));
     view->setIconSize(QSize(16, 16));
     view->setSortingEnabled(true);
-
-    view->setSortingEnabled(true);
     view->setColumnWidth(0, 250);
 
+    applyStyle(view);
+}
+
+void FileExplorer::applyStyle(QTreeView *view) {
     view->setStyleSheet(QString
                      (
         "QTreeView{"
@@ -41,5 +49,4 @@ void FileExplorer::setupDirectoryView(QTreeView *view, const QString &path) {
         Theme::selected,
         Theme::surface1
 ));
-    }
-
+}
