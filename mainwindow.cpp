@@ -14,7 +14,9 @@
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QStatusBar>
+#include <QStyle>
 #include <QTabWidget>
+#include <QToolBar>
 #include <QTreeView>
 #include <QVBoxLayout>
 
@@ -97,7 +99,21 @@ void MainWindow::buildLayout()
     splitter->setSizes({540, 190});
 
     setCentralWidget(splitter);
-    statusBar()->showMessage(tr("Ready"));
+
+    openFolderAction = new QAction(style()->standardIcon(QStyle::SP_DirOpenIcon),
+                                   tr("Open &Folder"), this);
+    openFolderAction->setShortcut(QKeySequence(tr("Ctrl+Shift+O")));
+    connect(openFolderAction, &QAction::triggered,
+            this, &MainWindow::onOpenFolderTriggered);
+
+    QToolBar *toolbar = addToolBar(tr("Main"));
+    toolbar->setObjectName("mainToolbar");
+    toolbar->setMovable(false);
+    toolbar->setFloatable(false);
+    toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    toolbar->addAction(openFolderAction);
+
+    statusBar()->showMessage(tr("No folder open — File → Open Folder (Ctrl+Shift+O)"));
 }
 
 void MainWindow::buildMenus()
@@ -113,10 +129,7 @@ void MainWindow::buildMenus()
     connect(openFile, &QAction::triggered, this, &MainWindow::onOpenFileTriggered);
 
 
-    QAction *openFolder = fileMenu->addAction(tr("Open &Folder"));
-    openFolder->setShortcut(QKeySequence(tr("Ctrl+Shift+O")));
-    connect(openFolder, &QAction::triggered,
-            this, &MainWindow::onOpenFolderTriggered);
+    fileMenu->addAction(openFolderAction);
 
 
     fileMenu->addSeparator();

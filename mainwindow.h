@@ -31,6 +31,7 @@ private:
     void updateWindowTitle();
     FileExplorer explorer;
 
+    QAction *openFolderAction = nullptr;
     QDockWidget    *filesDock    = nullptr;
     QTreeView      *treeView     = nullptr;
     QStackedWidget *treeStack    = nullptr;
