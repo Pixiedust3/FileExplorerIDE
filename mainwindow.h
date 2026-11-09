@@ -8,6 +8,7 @@
 class QDockWidget;
 class QPlainTextEdit;
 class QSplitter;
+class QStackedWidget;
 class QTabWidget;
 class QTreeView;
 class  EditorTab;
@@ -32,6 +33,7 @@ private:
 
     QDockWidget    *filesDock    = nullptr;
     QTreeView      *treeView     = nullptr;
+    QStackedWidget *treeStack    = nullptr;
     QTabWidget     *tabWidget    = nullptr;
     QPlainTextEdit *terminalPane = nullptr;
     QSplitter      *splitter     = nullptr;
