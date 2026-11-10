@@ -28,6 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Theme.h
         EditorTab.h
         EditorTab.cpp
+        AnsiFilter.h
+        AnsiFilter.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
