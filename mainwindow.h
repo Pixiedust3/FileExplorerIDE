@@ -6,11 +6,11 @@
 #include "FileExplorer.h"
 
 class QDockWidget;
-class QPlainTextEdit;
 class QSplitter;
 class QStackedWidget;
 class QTabWidget;
 class QTreeView;
+class TerminalPanel;
 class  EditorTab;
 
 class MainWindow : public QMainWindow
@@ -36,7 +36,7 @@ private:
     QTreeView      *treeView     = nullptr;
     QStackedWidget *treeStack    = nullptr;
     QTabWidget     *tabWidget    = nullptr;
-    QPlainTextEdit *terminalPane = nullptr;
+    TerminalPanel  *terminalPane = nullptr;
     QSplitter      *splitter     = nullptr;
 
 private slots:
