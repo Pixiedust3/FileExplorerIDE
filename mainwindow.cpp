@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "EditorTab.h"
+#include "TerminalPanel.h"
 #include "Theme.h"
 #include <QAction>
 #include <QDir>
@@ -85,10 +86,12 @@ void MainWindow::buildLayout()
     connect(tabWidget, &QTabWidget::currentChanged,    this, &MainWindow::onCurrentTabChanged);
     connect(treeView, &QTreeView::doubleClicked,       this, &MainWindow::onFileDoubleClicked);
 
-    terminalPane = new QPlainTextEdit(this);
+    terminalPane = new TerminalPanel(this);
     terminalPane->setObjectName("terminalPane");
-    terminalPane->setReadOnly(true);
-    terminalPane->setPlaceholderText("Terminal place holder");
+    terminalPane->startShell(QDir::homePath());
+
+    connect(terminalPane, &TerminalPanel::statusMessage, this,
+            [this](const QString &msg, int ms) { statusBar()->showMessage(msg, ms); });
 
     splitter = new QSplitter(Qt::Vertical, this);
     splitter->setObjectName("splitter");
@@ -162,6 +165,7 @@ void MainWindow::onOpenFolderTriggered()
 
     explorer.setupDirectoryView(treeView, directory);
     treeStack->setCurrentIndex(1);
+    terminalPane->setWorkingDirectory(directory);
     statusBar()->showMessage(tr("Opened %1").arg(directory), 3000);
 }
 
